@@ -17,9 +17,9 @@ def table_exists(catalog, database, table):
 # DBTITLE 1,Scopo das tabelas a ser criada
 catalog = "bronze"
 schema = "upsell"
-tablename = dbutils.widgets.get("customers")
-id_field = dbutils.widgets.get("idCustomer")
-timestamp_field = dbutils.widgets.get("modified_date")
+tablename = dbutils.widgets.get("tablename")
+id_field = dbutils.widgets.get("id_field ")
+timestamp_field = dbutils.widgets.get("timestamp_field")
 
 # COMMAND ----------
 
