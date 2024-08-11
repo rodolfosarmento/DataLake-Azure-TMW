@@ -18,7 +18,7 @@ def table_exists(catalog, database, table):
 catalog = "bronze"
 schema = "upsell"
 tablename = dbutils.widgets.get("tablename")
-id_field = dbutils.widgets.get("id_field ")
+id_field = dbutils.widgets.get("id_field")
 timestamp_field = dbutils.widgets.get("timestamp_field")
 
 # COMMAND ----------
