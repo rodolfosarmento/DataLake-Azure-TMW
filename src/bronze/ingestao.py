@@ -11,13 +11,13 @@ import utils
 # DBTITLE 1,Escopo das tabelas a ser criada
 catalog = "bronze"
 schema = "upsell"
-tablename = "transactions_product"
-id_field = "idTransactionCart"
-timestamp_field = "modified_date"
+tablename = dbutils.widgets.get("tablename")
 df_schema = utils.import_schema(tablename)
-# tablename = dbutils.widgets.get("tablename")
-# id_field = dbutils.widgets.get("id_field")
-# timestamp_field = dbutils.widgets.get("timestamp_field")
+id_field = dbutils.widgets.get("id_field")
+timestamp_field = dbutils.widgets.get("timestamp_field")
+# tablename = "transactions_product"
+# id_field = "idTransactionCart"
+# timestamp_field = "modified_date"
 
 # COMMAND ----------
 
